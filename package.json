@@ -1,0 +1,25 @@
+{
+  "name": "blockchain2.0",
+  "version": "1.0.0",
+  "description": "A second stab at blockchain.",
+  "main": "networkNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon networkNode.js 9000 http://localhost:9000",
+    "node_2": "nodemon networkNode.js 8000 http://localhost:8000",
+    "node_3": "nodemon networkNode.js 7000 http://localhost:7000",
+    "node_4": "nodemon networkNode.js 8080 http://localhost:8080",
+    "node_5": "nodemon networkNode.js 5000 http://localhost:5000",
+    "node_6": "nodemon networkNode.js 4000 http://localhost:4000",
+    "start": "npm run node_1 && npm run node_2"
+  },
+  "author": "Jack D Ryan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sha256": "^0.2.0",
+    "uuid": "^3.3.2"
+  }
+}
